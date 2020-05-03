@@ -30,9 +30,11 @@ class Ugshell < Formula
     Dir.chdir "build"
     system "cmake", ".."
     system "make"
+    Dir.chdir ".."
     
-    libexec.install Dir.glob("bin")
-    libexec.install Dir.glob("lib")
+    
+    libexec.install Dir.glob("bin/*")
+    libexec.install Dir.glob("lib/*")
   end
 
   test do
