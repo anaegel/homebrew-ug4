@@ -10,7 +10,7 @@ class Ugshell < Formula
   version "0.1"
   sha256 ""
 
-  depends_on "anaegel/ughub"
+  depends_on "anaegel/repo/ughub"
 
   # Additional dependency
   # resource "" do
