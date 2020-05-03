@@ -26,8 +26,8 @@ class Ugshell < Formula
     #bin.install_symlink libexec/"ughub" => "ughub"
     system "ughub", "init"
     system "ughub", "install", "ConvectionDiffusion"
-    system "mkdir", "build"
-    system "cd", "build"
+    Dir.mkdir "build"
+    Dir.chdir "build"
     system "cmake", ".."
     
   end
