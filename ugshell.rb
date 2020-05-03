@@ -11,6 +11,7 @@ class Ugshell < Formula
   sha256 ""
 
   depends_on "anaegel/repo/ughub"
+  depends_on "cmake"
 
   # Additional dependency
   # resource "" do
